@@ -13,6 +13,8 @@ def is_need_spacer(prev_text, next_text, has_spacer):
         return False
     if not has_spacer:
         return False
+    if prev_text[-1] in (u'、', u'。'):
+        return False
     return True
 
 
